@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/national_monuments_portugal" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
