@@ -258,15 +258,15 @@ class NationalMonumentsPortugal:
         #print(monumento)
       json_data = json.dumps(content)
 
-      with open('https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/monumento.json', 'w') as f:
+      with open('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.json', 'w') as f:
 
         f.write(json_data)
 
-      json_file = 'https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/monumento.json'
+      json_file = 'https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.json'
 
       df = pd.read_json(json_file)
 
-      df.to_csv('https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/monumento.csv')
+      df.to_csv('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.csv')
 
     def add_open_street_map(self):
 
@@ -288,11 +288,11 @@ class NationalMonumentsPortugal:
     # adicionar camada a partir dos dados do csv
     def add_layer(self):
 
-          uri = "https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/monumento.csv?encoding={}&delimiter={}&crs=epsg:4723&wktField={}".format("UTF-8",",", "coordenadas")
+          uri = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.csv?encoding={}&delimiter={}&crs=epsg:4723&wktField={}".format("UTF-8",",", "coordenadas")
 
           vlayer = QgsVectorLayer(uri, "monumentos_nacionais", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
-          path = "https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/pointer.svg"
+          path = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/pointer.svg"
 
           symbol = QgsSvgMarkerSymbolLayer(path)
           symbol.setSize(6)
@@ -364,25 +364,25 @@ class NationalMonumentsPortugal:
         #print(museu)
       json_data = json.dumps(content)
 
-      with open('https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/museu.json', 'w') as f:
+      with open('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.json', 'w') as f:
 
         f.write(json_data)
 
-      json_file = 'https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/museu.json'
+      json_file = 'https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.json'
 
       df = pd.read_json(json_file)
 
-      df.to_csv('https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/museu.csv')
+      df.to_csv('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.csv')
 
     
     # adicionar camada a partir dos dados do csv
     def add_layer1(self):
 
-          uri = "https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/museu.csv?encoding={}&delimiter={}&crs=epsg:4326&wktField={}".format("UTF-8",",", "coordenadas")
+          uri = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.csv?encoding={}&delimiter={}&crs=epsg:4326&wktField={}".format("UTF-8",",", "coordenadas")
 
           vlayer = QgsVectorLayer(uri, "museus", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
-          path = "https://gitlab.com/andresp99/sig/-/blob/master/NationalMonumentsPortugal/museum.svg"
+          path = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museum.svg"
 
           symbol = QgsSvgMarkerSymbolLayer(path)
           symbol.setSize(6)
