@@ -292,7 +292,7 @@ class NationalMonumentsPortugal:
 
           vlayer = QgsVectorLayer(uri, "monumentos_nacionais", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
-          path = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/pointer.svg"
+          path = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/national_monuments_portugal/DATA/pointer.svg"
 
           symbol = QgsSvgMarkerSymbolLayer(path)
           symbol.setSize(6)
@@ -382,7 +382,7 @@ class NationalMonumentsPortugal:
 
           vlayer = QgsVectorLayer(uri, "museus", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
-          path = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museum.svg"
+          path = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/national_monuments_portugal/DATA/museum.svg"
 
           symbol = QgsSvgMarkerSymbolLayer(path)
           symbol.setSize(6)
