@@ -12,8 +12,8 @@ email=joao-santos-26@outlook.com
 
 about=This plugin displays all the monuments in Portugal which are considered National Monuments, or museums. It also provides the user with information about them and an image. In case of a missing Map layer this plugin implements it.
 
-tracker=https://gitlab.com/andresp99/sig/-/tree/master/NationalMonumentsPortugal/bugs
-repository=https://gitlab.com/andresp99/sig/-/tree/master/
+tracker=https://github.com/Joaosantos-99/SIG-21/tree/main/national_monuments_portugal/bugs
+repository=https://github.com/Joaosantos-99/SIG-21/tree/main/national_monuments_portugal
 # End of mandatory metadata
 
 # Recommended items:
