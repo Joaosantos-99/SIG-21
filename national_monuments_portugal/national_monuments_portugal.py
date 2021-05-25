@@ -258,15 +258,15 @@ class NationalMonumentsPortugal:
         #print(monumento)
       json_data = json.dumps(content)
 
-      with open('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.json', 'w') as f:
+      with open('C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/monumento.json', 'w') as f:
 
         f.write(json_data)
 
-      json_file = 'https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.json'
+      json_file = 'C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/monumento.json'
 
       df = pd.read_json(json_file)
 
-      df.to_csv('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.csv')
+      df.to_csv('C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/monumento.csv')
 
     def add_open_street_map(self):
 
@@ -288,7 +288,7 @@ class NationalMonumentsPortugal:
     # adicionar camada a partir dos dados do csv
     def add_layer(self):
 
-          uri = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/monumento.csv?encoding={}&delimiter={}&crs=epsg:4723&wktField={}".format("UTF-8",",", "coordenadas")
+          uri = "C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/monumento.csv?encoding={}&delimiter={}&crs=epsg:4723&wktField={}".format("UTF-8",",", "coordenadas")
 
           vlayer = QgsVectorLayer(uri, "monumentos_nacionais", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
@@ -364,21 +364,21 @@ class NationalMonumentsPortugal:
         #print(museu)
       json_data = json.dumps(content)
 
-      with open('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.json', 'w') as f:
+      with open('C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/museu.json', 'w') as f:
 
         f.write(json_data)
 
-      json_file = 'https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.json'
+      json_file = 'C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/museu.json'
 
       df = pd.read_json(json_file)
 
-      df.to_csv('https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.csv')
+      df.to_csv('C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/museu.csv')
 
     
     # adicionar camada a partir dos dados do csv
     def add_layer1(self):
 
-          uri = "https://raw.githubusercontent.com/Joaosantos-99/SIG-21/main/museu.csv?encoding={}&delimiter={}&crs=epsg:4326&wktField={}".format("UTF-8",",", "coordenadas")
+          uri = "C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/museu.csv?encoding={}&delimiter={}&crs=epsg:4326&wktField={}".format("UTF-8",",", "coordenadas")
 
           vlayer = QgsVectorLayer(uri, "museus", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
