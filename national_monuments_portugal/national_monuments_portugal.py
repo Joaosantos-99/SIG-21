@@ -288,7 +288,7 @@ class NationalMonumentsPortugal:
     # adicionar camada a partir dos dados do csv
     def add_layer(self):
 
-          uri = "C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/monumento.csv?encoding={}&delimiter={}&crs=epsg:4723&wktField={}".format("UTF-8",",", "coordenadas")
+          uri = 'file:///'+"C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/monumento.csv?encoding={}&delimiter={}&crs=epsg:4723&wktField={}".format("UTF-8",",", "coordenadas")
 
           vlayer = QgsVectorLayer(uri, "monumentos_nacionais", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
@@ -378,7 +378,7 @@ class NationalMonumentsPortugal:
     # adicionar camada a partir dos dados do csv
     def add_layer1(self):
 
-          uri = "C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/museu.csv?encoding={}&delimiter={}&crs=epsg:4326&wktField={}".format("UTF-8",",", "coordenadas")
+          uri = 'file:///'+"C:/Users/joao-/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/national_monuments_portugal/DATA/museu.csv?encoding={}&delimiter={}&crs=epsg:4326&wktField={}".format("UTF-8",",", "coordenadas")
 
           vlayer = QgsVectorLayer(uri, "museus", "delimitedtext")
           #QgsProject.instance().addMapLayer(vlayer)
